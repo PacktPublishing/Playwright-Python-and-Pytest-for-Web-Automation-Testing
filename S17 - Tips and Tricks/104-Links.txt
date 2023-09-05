@@ -1,0 +1,1 @@
+Available Devices - https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json

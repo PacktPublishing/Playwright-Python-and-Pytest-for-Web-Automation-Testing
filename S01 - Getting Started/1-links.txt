@@ -1,0 +1,5 @@
+Download Python - https://www.python.org/downloads/
+Mac Python Virutal Environment - https://www.youtube.com/watch?v=Y9jiGNFOhOs
+Linux Python Virutal Environment - https://www.youtube.com/watch?v=07fl24lF0Xk
+
+Playwright Website - https://playwright.dev/python/

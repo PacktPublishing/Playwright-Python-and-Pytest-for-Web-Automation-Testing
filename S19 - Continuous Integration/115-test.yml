@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  - push
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest-playwright
+
+      - name: Ensure browsers are installed
+        run: python -m playwright install chromium --with-deps
+
+      - name: Run tests
+        run: |
+          cd cubeit
+          python -m http.server 8000 &
+          cd ..
+          pytest -v
